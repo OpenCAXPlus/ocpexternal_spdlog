@@ -6,6 +6,7 @@ spdlog is a fast C++ logging library, find more [here](https://github.com/gabime
 ## Things that you need to modify
 
 - [x] This README.md file 
+- [x] The workflow yml files, change the name of workflow
 - [x] The ocp.toml file
 - [x] scripts/prepare.sh
 - [x] scripts/install.sh
