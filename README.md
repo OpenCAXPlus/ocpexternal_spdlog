@@ -1,5 +1,8 @@
 # spdlog for OpenCAX+ external
 
+[![spdlog Build](https://github.com/OpenCAXPlus/ocpexternal_spdlog/actions/workflows/build.yml/badge.svg)](https://github.com/OpenCAXPlus/ocpexternal_spdlog/actions/workflows/build.yml)
+[![spdlog Publish](https://github.com/OpenCAXPlus/ocpexternal_spdlog/actions/workflows/publish.yml/badge.svg)](https://github.com/OpenCAXPlus/ocpexternal_spdlog/actions/workflows/publish.yml)
+
 spdlog is a fast C++ logging library, find more [here](https://github.com/gabime/spdlog)
 
 
