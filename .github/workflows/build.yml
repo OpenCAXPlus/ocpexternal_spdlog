@@ -23,5 +23,5 @@ jobs:
       - name: Prepare and Install
         run: |
           external_version=1.11.0
-          source scripts/prepare.sh $external_id
+          source scripts/prepare.sh $external_version
           source ocp/external/spdlog/$external_version/default/install.sh
