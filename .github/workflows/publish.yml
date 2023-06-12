@@ -29,7 +29,7 @@ jobs:
           external_version=${{ github.event.inputs.version }}
           source scripts/prepare.sh $external_version $external_id
           xzfile="$external_id-$external_version.tar.xz"
-          rm ${external_id}-*.tar.xz
+          rm -rf ${external_id}-*.tar.xz
           echo "Remove previous tar.xz files"
           tar -cJf $xzfile ocp/
           echo "Create external compressed file from ocp folder"
