@@ -1,17 +1,23 @@
-# OpenCAX+ External Template
+# spdlog for OpenCAX+ external
 
-This is a template repository for external dependencies of the OpenCAX+ projects.
-
-External dependencies are used for both toolkits or starters of the OpenCAX+ SDK.
+spdlog is a fast C++ logging library, find more [here](https://github.com/gabime/spdlog)
 
 
 ## Things that you need to modify
 
-1. This README.md file 
-2. The ocp.toml file
-3. scripts/prepare.sh
-4. scripts/install.sh
-5. Create any new configurations build folder
+- [x] This README.md file 
+- [x] The ocp.toml file
+- [x] scripts/prepare.sh
+- [x] scripts/install.sh
+- [x] Create any new configurations build folder, and their install.sh scripts
+
+
+
+## Things you need to check before submit PR to include this external project
+
+- [x] after you run the prepare.sh script, is the external project's source code resides in ocp/external/external_id/version/source?
+- [x] does the ocp/external/external_id/version folder also contains a ocp.toml file and any build configuration folders that you want?
+- [x] if you run the ocp/external/external_id/version/configuration/install.sh script, is the build cache files put into ocp/external/external_id/version/configuration/build folder, and the install files put into ocp/external/external_id/version/configuration/install folder?
 
 ## Some rules
 1. Structure of the compressed source code must be like ocp/external/external_id/version/source, where the source code resides. The ocp.toml file should be copied to ocp/external/external_id/version folder.
