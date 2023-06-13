@@ -13,7 +13,7 @@ spdlog is a fast C++ logging library, find more [here](https://github.com/gabime
 - [x] The ocp.toml file
 - [x] scripts/prepare.sh
 - [x] scripts/install.sh
-- [x] Create any new configurations build folder, and their install.sh scripts
+- [x] Create any new configurations build and install script in the config folder
 
 
 
@@ -21,7 +21,7 @@ spdlog is a fast C++ logging library, find more [here](https://github.com/gabime
 
 - [x] run the prepare.sh script locally, is the external project's source code resides in ocp/external/external_id/version/source?
 - [x] does the ocp/external/external_id/version folder also contains a ocp.toml file and any build configuration folders that you want?
-- [x] run the ocp/external/external_id/version/configuration/install.sh script locally, is the build cache files put into ocp/external/external_id/version/configuration/build folder, and the install files put into ocp/external/external_id/version/configuration/install folder?
+- [x] run the ocp/external/external_id/version/config/$config.sh script locally, is the build cache files put into ocp/external/external_id/version/build/$config folder, and the install files put into ocp/external/external_id/version/install/$config folder?
 - [x] run the External Build workflow
 
 ## Some rules
@@ -34,4 +34,4 @@ spdlog is a fast C++ logging library, find more [here](https://github.com/gabime
     - prepare.sh, to prepare the folder structure for external source. It must located in ocp/external/external_id/version/source
     - publish.sh, to xz compress the external source code and publish to OSS bucket. This should only to be used by the OpenCAX+ runner.
     - install.sh, 
-- default, a specific build configuration folder which includes an install.sh script to implement the build. You must put any build files into a build subfolder, and all install files into the install subfolder.
+- config, contains specific build configuration scripts to install different build configuration of the source code. You must put any build files into a build subfolder, and all install files into the install subfolder.
