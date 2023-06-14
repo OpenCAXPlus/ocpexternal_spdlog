@@ -10,7 +10,7 @@ spdlog is a fast C++ logging library, find more [here](https://github.com/gabime
 
 - [x] This README.md file 
 - [x] The workflow yml files, change the name of workflow
-- [x] The ocp.toml file
+- [x] The ocp.yml file
 - [x] scripts/prepare.sh
 - [x] scripts/install.sh
 - [x] Create any new configurations build and install script in the config folder
@@ -20,12 +20,12 @@ spdlog is a fast C++ logging library, find more [here](https://github.com/gabime
 ## Things you need to check before publish the external project
 
 - [x] run the prepare.sh script locally, is the external project's source code resides in ocp/external/external_id/version/source?
-- [x] does the ocp/external/external_id/version folder also contains a ocp.toml file and any build configuration folders that you want?
+- [x] does the ocp/external/external_id/version folder also contains a ocp.yml file and any build configuration folders that you want?
 - [x] run the ocp/external/external_id/version/config/$config.sh script locally, is the build cache files put into ocp/external/external_id/version/build/$config folder, and the install files put into ocp/external/external_id/version/install/$config folder?
 - [x] run the External Build workflow
 
 ## Some rules
-1. Structure of the compressed source code must be like ocp/external/external_id/version/source, where the source code resides. The ocp.toml file should be copied to ocp/external/external_id/version folder.
+1. Structure of the compressed source code must be like ocp/external/external_id/version/source, where the source code resides. The ocp.yml file should be copied to ocp/external/external_id/version folder.
 2. Must use tar.xz to compress the ocp folder
 3. The install script must install compiled software to an install subdirectory under the configuration folder.
 

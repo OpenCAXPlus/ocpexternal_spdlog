@@ -1,7 +1,0 @@
-name = "spdlog"
-id = "spdlog"
-base_url = "https://ocp-external.oss-cn-hongkong.aliyuncs.com"
-version = ["1.11.0"]
-default_version = "1.11.0"
-configuration = ["default"]
-default_configuration = "default"

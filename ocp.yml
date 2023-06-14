@@ -1,0 +1,7 @@
+name: spdlog
+id: spdlog
+type: toolkit
+default:
+  version: 1.11.0
+version:
+  - id: 1.11.0
