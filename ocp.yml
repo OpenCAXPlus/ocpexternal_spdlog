@@ -3,5 +3,9 @@ id: spdlog
 type: toolkit
 default:
   version: 1.11.0
-version:
+  config: default
+versions:
   - id: 1.11.0
+configs:
+  - id: default
+    run: source config/default.sh
