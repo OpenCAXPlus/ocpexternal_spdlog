@@ -1,11 +1,15 @@
 name: spdlog
 id: spdlog
 type: toolkit
-default:
-  version: 1.11.0
-  config: default
+default: "1.11.0"
+scripts:
+  prepare: source scripts/prepare.sh
+  publish: source scripts/publish.sh
+  check: source scripts/check.sh
 versions:
   - id: 1.11.0
-configs:
-  - id: default
-    run: source config/default.sh
+    default: "default"
+    configurations:
+      - id: default
+        run: source configurations/default.sh
+  
