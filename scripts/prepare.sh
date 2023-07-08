@@ -3,14 +3,15 @@
 # The source code must be in ocp/external/external_id/version/source folder
 # get command line arguments
 version=${1}
-external_id="spdlog"
+external_id=${2:-"spdlog"}
 
 # prepare necessary variables
 url="https://github.com/gabime/spdlog/archive/refs/tags/v$version.tar.gz"
 dir="ocp/external/$external_id/$version/source"
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 gz_file="$external_id-v$version.tar.gz"
-# move to the root of the external repository
+
+# cd to the root of the external repository
 cd $script_dir/..
 
 # start the script

@@ -5,7 +5,7 @@
 # issue in the OCP sdk repository.
 
 version=${1}
-external_id=spdlog
+external_id=${2:-"spdlog"}
 
 xzfile="$external_id-$version.tar.xz"
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
