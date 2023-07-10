@@ -18,10 +18,7 @@ configurations:
 default:
   version: "1.11.0"
   configuration: "default"
-  scripts: 
-    prepare: prepare
-    publish: publish
-    check: check
+  scripts: ["prepare","publish","check"]
 versions:
   - id: "1.11.0"
   
