@@ -35,3 +35,9 @@ spdlog is a fast C++ logging library, find more [here](https://github.com/gabime
     - publish.sh, to xz compress the external source code and publish to OSS bucket. This should only to be used by the OpenCAX+ runner.
     - install.sh, 
 - config, contains specific build configuration scripts to install different build configuration of the source code. You must put any build files into a build subfolder, and all install files into the install subfolder.
+
+## Commands
+```sh
+source scripts/prepare.sh 1.11.0
+source scripts/publish.sh 1.11.0
+```

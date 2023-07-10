@@ -1,6 +1,20 @@
 name: spdlog
 uid: spdlog
 type: external
+scripts: # some scripts that developers may run
+  - id: prepare # id is used as a reference for others to find this script
+    run: scripts/prepare # run gives you the script to run (without extension)
+    args: ["@version","@uid"]
+  - id: publish
+    run : scripts/publish
+    args: ["@version","@uid"]
+  - id: check
+    run: scripts/check
+    args: ["@version","@uid"]
+configurations:
+  - id: "default"
+    run: configurations/default
+    args: ["@version","@uid"]
 default:
   version: "1.11.0"
   configuration: "default"
@@ -8,19 +22,6 @@ default:
     prepare: prepare
     publish: publish
     check: check
-scripts: # some scripts that developers may run
-  - id: prepare # id is used as a reference for others to find this script
-    run: scripts/prepare # run gives you the script to run (without extension)
-    args: ["version","uid"]
-  - id: publish
-    run : scripts/publish
-    args: ["version","uid"]
-  - id: check
-    run: scripts/check
-    args: ["version","uid"]
-configurations:
-  - id: "default"
-    run: configurations/default
 versions:
   - id: "1.11.0"
   
