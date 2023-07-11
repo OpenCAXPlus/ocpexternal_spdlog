@@ -1,6 +1,7 @@
 name: spdlog
 uid: spdlog
 type: external
+licenses: ["MIT"]
 scripts: # some scripts that developers may run
   - id: prepare # id is used as a reference for others to find this script
     run: scripts/prepare # run gives you the script to run (without extension)

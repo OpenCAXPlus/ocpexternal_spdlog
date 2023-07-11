@@ -1,0 +1,8 @@
+{
+    "yaml.schemas": {
+        "/home/xcheng/code/OpenCAXPlus/ocpexternal/ocp.schema.json": [
+            "ocp.yml",
+            "file:///home/xcheng/code/OpenCAXPlus/ocpexternal_spdlog/ocp.yml"
+        ]
+    }
+}
