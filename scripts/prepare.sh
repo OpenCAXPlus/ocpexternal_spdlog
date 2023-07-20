@@ -26,6 +26,8 @@ tar -xzf $gz_file -C $dir --strip-components=1
 echo "Extract files to ocp folder"
 cp -r configurations "$dir/.."
 echo "Copy all configurations to ocp folder"
+cp -r cmake "$dir/.."
+echo "Copy all cmake files to ocp folder"
 cp -r scripts "$dir/.."
 echo "Copy all scripts to ocp folder"
 cp ocp.yml "$dir/.."
